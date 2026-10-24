@@ -1,0 +1,20 @@
+Open Duck Mini - Duckling
+
+This repository is based on Open Duck Mini v2
+https://github.com/apirrone/Open_Duck_Mini (branch v2)
+Copyright Antoine Pirrone and contributors, Apache License 2.0.
+
+Unchanged copies of upstream files:
+  stl/original/*.stl   from print/ in the upstream repository
+
+Modified files (reshaped from the upstream parts):
+  stl/duckling/*_duckling.stl
+    head, head_bot_sheet, left_antenna_holder, right_antenna_holder, body_front,
+    body_back, body_middle_top, body_middle_bottom, battery_pack_lid, left_cache,
+    right_cache
+
+New files:
+  stl/bill/duck_bill.stl
+  blender/open-duck-mini.blend (assembled from upstream meshes)
+  tools/*
+  images/*
