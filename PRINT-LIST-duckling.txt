@@ -1,0 +1,74 @@
+OPEN DUCK MINI v2 - "DUCKLING" PRINT LIST
+=========================================
+
+37 files, 52 pieces in total. Everything is in millimetres.
+The official parts with the outer shells swapped for the Duckling design: a domed head with a bill, a round chubby body.
+See images/duckling-views.png for what the finished duck looks like.
+
+SETTINGS
+  - PLA at 15% infill for everything, except foot_bottom_tpu: TPU at 40% infill.
+  - New shells: 3 walls/perimeters, supports where the slicer asks for them.
+    The files come in the official orientation; the curved ones may print better
+    turned onto a different face. Let the slicer's lay-flat/auto-orient decide.
+  - Biggest part: head_duckling.stl (216 x 196 x 71 mm). Needs a bed of at least 220 x 200 mm.
+
+FIRST
+  The new shells haven't been test-printed. Print the head and the head bottom plate
+  first and check the head sits flush and the screw holes line up before printing
+  the body. Holes near strongly curved areas may need drilling out.
+
+PARTS
+  file                                            qty  material  colour                 size mm     notes
+  stl/duckling/head_duckling.stl                    1  PLA 15%  yellow (#f6dc5a)       216x196x71  NEW SHAPE. Print this first and test-fit it.
+  stl/duckling/head_bot_sheet_duckling.stl          1  PLA 15%  dark grey              209x190x3   New outline to match the head.
+  stl/duckling/left_antenna_holder_duckling.stl     1  PLA 15%  orange (#f08a24)       42x28x21    Ear cap, new shape.
+  stl/duckling/right_antenna_holder_duckling.stl    1  PLA 15%  orange (#f08a24)       44x28x21    Ear cap, new shape.
+  stl/duckling/body_front_duckling.stl              1  PLA 15%  yellow (#f6dc5a)       133x116x27  NEW SHAPE. No flat face: needs supports or another orientation.
+  stl/duckling/body_back_duckling.stl               1  PLA 15%  yellow (#f6dc5a)       124x124x46  NEW SHAPE. No flat face: needs supports or another orientation.
+  stl/duckling/body_middle_top_duckling.stl         1  PLA 15%  yellow (#f6dc5a)       140x129x61  NEW SHAPE. No flat face: needs supports or another orientation.
+  stl/duckling/body_middle_bottom_duckling.stl      1  PLA 15%  yellow (#f6dc5a)       148x130x86  NEW SHAPE.
+  stl/duckling/battery_pack_lid_duckling.stl        1  PLA 15%  yellow (#f6dc5a)       85x56x9     NEW SHAPE. No flat face: needs supports or another orientation.
+  stl/duckling/left_cache_duckling.stl              1  PLA 15%  deep yellow (#f2c94c)  142x88x40   Thigh cover, NEW SHAPE. No flat face: needs supports or another orientation.
+  stl/duckling/right_cache_duckling.stl             1  PLA 15%  deep yellow (#f2c94c)  141x88x40   Thigh cover, NEW SHAPE. No flat face: needs supports or another orientation.
+  stl/addons/duck_bill.stl                          1  PLA 15%  orange (#f08a24)       64x50x19    Flat side down, no supports. Glued on the face below the eyes.
+  stl/original/foot_top.stl                         2  PLA 15%  orange (#f08a24)       103x46x35
+  stl/original/foot_side.stl                        2  PLA 15%  orange (#f08a24)       103x46x12
+  stl/original/foot_bottom_pla.stl                  2  PLA 15%  dark grey              93x28x8
+  stl/original/foot_bottom_tpu.stl                  2  TPU 40%  black TPU              102x41x8    The grippy sole: must be TPU.
+  stl/original/knee_to_ankle_left_sheet.stl         4  PLA 15%  dark grey              71x31x8
+  stl/original/knee_to_ankle_right_sheet.stl        4  PLA 15%  dark grey              71x31x7
+  stl/original/leg_spacer.stl                       4  PLA 15%  dark grey              37x28x10
+  stl/original/left_roll_to_pitch.stl               1  PLA 15%  orange (#f08a24)       86x47x31    Hip.
+  stl/original/right_roll_to_pitch.stl              1  PLA 15%  orange (#f08a24)       86x47x31    Hip.
+  stl/original/roll_motor_bottom.stl                2  PLA 15%  light grey             32x31x31
+  stl/original/roll_motor_top.stl                   2  PLA 15%  light grey             38x29x20
+  stl/original/trunk_bottom.stl                     1  PLA 15%  dark grey              108x74x54   Main frame.
+  stl/original/trunk_top.stl                        1  PLA 15%  dark grey              125x101x41  Main frame.
+  stl/original/neck_left_sheet.stl                  1  PLA 15%  dark grey              58x31x7
+  stl/original/neck_right_sheet.stl                 1  PLA 15%  dark grey              58x31x6
+  stl/original/head_pitch_to_yaw.stl                1  PLA 15%  dark grey              72x45x32
+  stl/original/head_yaw_to_roll.stl                 1  PLA 15%  dark grey              88x80x42
+  stl/original/head_roll_mount.stl                  1  PLA 15%  dark grey              65x40x15
+  stl/original/left_eye.stl                         1  PLA 15%  any                    35x35x4     Optional: eye lights.
+  stl/original/right_eye.stl                        1  PLA 15%  any                    40x40x8     Optional: eye lights.
+  stl/original/bulb.stl                             1  PLA 15%  any                    35x35x2     Optional: projector.
+  stl/original/flash_light_module.stl               1  PLA 15%  any                    41x31x28    Optional: projector.
+  stl/original/flash_reflector_interface.stl        1  PLA 15%  any                    23x23x13    Optional: projector.
+  stl/original/speaker_interface.stl                1  PLA 15%  any                    39x37x21    Optional: speaker.
+  stl/original/speaker_stand.stl                    1  PLA 15%  any                    51x47x46    Optional: speaker.
+
+ROUGH FILAMENT (estimate; the slicer gives the real number)
+  yellow (#f6dc5a)         about 480 g
+  dark grey                about 360 g
+  orange (#f08a24)         about 160 g
+  deep yellow (#f2c94c)    about 90 g
+  black TPU                about 30 g
+  light grey               about 30 g
+  any                      about 20 g
+
+NOT INCLUDED
+  Servos, electronics, screws, heat-set inserts and bearings.
+
+LICENCE
+  Original parts: Open Duck Mini by Antoine Pirrone and contributors, Apache License 2.0
+  (see LICENSE and NOTICE).

@@ -201,6 +201,9 @@ def head_cage_edit(cage, spec, K=1.0):
         x = x + spec["brow"] / hx * front ** 4 * np.exp(-((cage.q[..., 2] - 0.35) / 0.45) ** 2) * (1 - np.abs(cage.q[..., 1]) ** 4)
     if spec.get("rear_flare"):  # widen the back so the front reads narrower
         y = y + spec["rear_flare"] / hy * cage.q[..., 1] * (1 - front) ** 2
+    # The bottom plate and the head's rim must stay flat to print and to sit on each other:
+    # no vertical movement in the two lowest cage layers (they carry nearly all of the plate's weight).
+    z = np.where(cage.q[..., 2] < -0.3, cage.q[..., 2], z)
     return np.stack((x, y, z), -1)
 
 

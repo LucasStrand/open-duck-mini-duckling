@@ -9,10 +9,10 @@ directory (`<workdir>` below) that holds the downloads and intermediate files.
 | 2 | `duck_blender.py` | Builds that in Blender, renders it and exports a web GLB. Its `blend` mode saves the assembled scene (`blender/open-duck-mini.blend`). |
 | 3 | `duck_designs.py` | Colour schemes plus the separate bill and tail add-ons. |
 | 4 | `duck_reshape.py` | The shell redesigns (Pebble, Duckling, Visor): free-form deformation cages, the clearance check against inside parts, weight estimates, renders, STLs and a GLB. Its `official_head` mode rebuilds the head from the current official `head.stl`. |
-| 5 | `align_to_print.py` | Finds the rigid transform from each robot-export part to its official print STL (and checks they're the same part). |
-| 6 | `make_print_pack.py` | Moves the reshaped shells into the official print orientation and checks them. |
+| 5 | `align_to_print.py`, `improve_alignment.py` | Find the rigid transform from each robot-export part to its official print STL (and check they're the same part); the second re-picks it by surface distance, which near-symmetric parts need. |
+| 6 | `make_shell_set.py` | Moves one design's reshaped shells into the official print orientation and checks them: `make_shell_set.py <workdir> <design> stl/<design>`. |
 | 7 | `clean_stl.py`, `fix_fin.py` | Merge duplicate vertices, dissolve sliver triangles, close the gaps they leave. |
-| 8 | `write_print_list.py` | Writes `PRINT-LIST.txt` from the actual files. |
+| 8 | `write_print_list.py` | Writes `PRINT-LIST-<design>.txt` from the actual files. |
 | – | `slim_glb.py` | Caps triangles per mesh in a GLB for the web. |
 
 `data/mujoco_mesh_frames.json` holds the transform MuJoCo applies to each mesh when it loads

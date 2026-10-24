@@ -8,13 +8,13 @@ Unchanged copies of upstream files:
   stl/original/*.stl   from print/ in the upstream repository
 
 Modified files (reshaped from the upstream parts):
-  stl/duckling/*_duckling.stl
+  stl/duckling/*_duckling.stl, stl/pebble/*_pebble.stl, stl/visor/*_visor.stl
     head, head_bot_sheet, left_antenna_holder, right_antenna_holder, body_front,
     body_back, body_middle_top, body_middle_bottom, battery_pack_lid, left_cache,
     right_cache
 
 New files:
-  stl/bill/duck_bill.stl
+  stl/addons/duck_bill.stl, stl/addons/duck_tail.stl
   blender/open-duck-mini.blend (assembled from upstream meshes)
   tools/*
   images/*
